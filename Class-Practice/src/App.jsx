@@ -23,7 +23,7 @@ function App() {
       {/* <Clock/> */}
       <ClockDisplay/>
       <ActivityFinder/>
-      <RefCounter/>
+      {/* <RefCounter/> */}
     </>
   )
 }
