@@ -1,10 +1,8 @@
-import { useState } from "react";
-
 function LandingPage(){
     return(
         <div>
-            LandingPage
-        </div>
+        landing Page
+      </div>
     )
 }
 

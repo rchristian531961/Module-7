@@ -6,7 +6,9 @@ import {Route,Routes} from 'react-router-dom'
 import Posts from './Components/Posts'
 import Dashboard from './Components/Dashboard'
 import { Link } from "react-router-dom";
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 /*
 After importing use Routes like example below
@@ -33,18 +35,17 @@ function App() {
       <Link to='/Dashboard'>Dashboard Link</Link>
       <br/>
       <Link to ='/'>Home Page</Link>
+      <br/>
 
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          
+          <Nav className="me-auto">
+            <Nav.Link href="/Dashboard">Dashboard</Nav.Link><br/>
+            <Nav.Link href="/Posts">Posts</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </>
   )
 }

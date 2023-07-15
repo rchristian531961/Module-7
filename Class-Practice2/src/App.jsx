@@ -5,16 +5,15 @@ import './App.css'
 import BasicCard from './Components/Card'
 import BasicTextFields from './Components/CreateForm'
 import ContextExample from './Components/context'
+import LandingPage from './Components/LandingPage'
+import {Routes,Route} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <h2>Hello</h2>
-      {/* <BasicCard/> */}
-      {/* <BasicTextFields/> */}
-      {<ContextExample/>}
+    
     </>
   )
 }
